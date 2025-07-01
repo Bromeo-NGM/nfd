@@ -107,7 +107,7 @@ async function onMessage (message) {
     if(!message?.reply_to_message?.chat){
       return sendMessage({
         chat_id:ADMIN_UID,
-        text:'记得点击回复令'
+        text:'记得点击回复'
       })
     }
     if(/^\/block$/.exec(message.text)){
